@@ -45,7 +45,7 @@ const Modal: React.FC<ModalProps> = ({
             translate-x-[-50%] 
             translate-y-[-50%] 
             rounded-md 
-            bg-neutral-800 
+            bg-neutral-900 
             p-[25px] 
             focus:outline-none
           ">

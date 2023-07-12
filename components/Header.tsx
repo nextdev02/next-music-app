@@ -48,7 +48,7 @@ const Header: React.FC<HeaderProps> = ({
         h-fit 
         bg-gradient-to-b 
         from-neutral-800 
-        p-6
+        p-9
         `,
         className
       )}>
@@ -132,7 +132,7 @@ const Header: React.FC<HeaderProps> = ({
               </Button>
               <Button 
                 onClick={() => router.push('/account')} 
-                className="bg-white"
+                className="bg-orange-600"
               >
                 <FaUserAlt />
               </Button>
