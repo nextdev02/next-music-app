@@ -7,14 +7,14 @@ import Modal from './Modal'
 import useUploadModal from '@/hooks/useUploadModal'
 import Input from './Input'
 
-import Button from "./Button";
-
 import { toast } from 'react-hot-toast';
 
 import { useRouter } from "next/navigation";
 
 import { useUser } from '@/hooks/useUser';
 import { useSupabaseClient } from "@supabase/auth-helpers-react";
+import SingleButton from "./SingleButton";
+
 
 
 
@@ -185,9 +185,11 @@ const UploadModal = () => {
                 />
             </div>
 
-            <Button disabled={isloading} type="submit">
+            <SingleButton disabled={isloading} type="submit">
+
                 Upload
-            </Button>
+
+            </SingleButton >
 
 
 
