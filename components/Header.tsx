@@ -48,8 +48,8 @@ const Header: React.FC<HeaderProps> = ({
         h-fit 
         bg-gradient-to-b 
         from-neutral-800 
-        p-2
-        sm:p-2
+        p-4
+        sm:p-4
         md:p-9
         lg-p-9
         `,
