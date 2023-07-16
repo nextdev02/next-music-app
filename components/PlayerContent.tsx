@@ -12,6 +12,8 @@ import usePlayer from "@/hooks/usePlayer";
 import LikeButton from "./LikeButton";
 import MediaItem from "./MediaItem";
 import Slider from "./Slider";
+import Duration from "./MusicPlayer";
+import MusicPlayer from "./MusicPlayer";
 
 
 interface PlayerContentProps {
@@ -117,6 +119,7 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
             items-center
           "
         >
+
           <div 
             onClick={handlePlay} 
             className="
@@ -133,7 +136,10 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
           >
             <Icon size={30} className="text-black" />
           </div>
+
         </div>
+
+        
 
         <div 
           className="
@@ -183,14 +189,19 @@ const PlayerContent: React.FC<PlayerContentProps> = ({
               transition
             " 
           />
+
+
+
+          
         </div>
+        
 
         <div className="hidden md:flex w-full justify-end pr-2">
           <div className="flex items-center gap-x-2 w-[120px]">
             <VolumeIcon 
               onClick={toggleMute} 
               className="cursor-pointer" 
-              size={34} 
+              size={33} 
             />
             <Slider 
               value={volume} 

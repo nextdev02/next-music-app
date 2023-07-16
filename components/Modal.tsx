@@ -92,6 +92,7 @@ const Modal: React.FC<ModalProps> = ({
               aria-label="Close"
             >
               <IoMdClose />
+              
             </button>
           </Dialog.Close>
         </Dialog.Content>

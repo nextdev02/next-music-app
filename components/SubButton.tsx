@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge'
 interface ButtonProps 
     extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
+const SubButton = forwardRef<HTMLButtonElement, ButtonProps>(({
     className,
     children,
     disabled,
@@ -41,4 +41,4 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(({
 
 
 
-export default Button
+export default SubButton

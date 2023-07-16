@@ -67,6 +67,7 @@ const Sidebar: React.FC<SidebarProps> = ({
             gap-y-4 
             px-5
             py-4
+            md-3
            ">
             {
               routes.map((item) => (

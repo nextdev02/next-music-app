@@ -7,7 +7,8 @@ import Modal from './Modal'
 import useUploadModal from '@/hooks/useUploadModal'
 import Input from './Input'
 
-import Buttonsubmit from './Buttonsubmit';
+import SubButton from "./SubButton";
+
 import { toast } from 'react-hot-toast';
 
 import { useRouter } from "next/navigation";
@@ -184,9 +185,9 @@ const UploadModal = () => {
                 />
             </div>
 
-            <Buttonsubmit disabled={isloading} type="submit">
+            <SubButton disabled={isloading} type="submit">
                 Upload
-            </Buttonsubmit>
+            </SubButton>
 
 
 

@@ -19,10 +19,9 @@ interface LibraryProps {
 const Library: React.FC<LibraryProps> = ({
   songs
 }) => {
-  const { user, subscription } = useUser();
+  const { user} = useUser();
   const uploadModal = useUploadModal();
   const authModal = useAuthModal();
-//   const subscribeModal = useSubscribeModal();
 
   const onPlay = useOnPlay(songs);
 
@@ -54,7 +53,7 @@ const Library: React.FC<LibraryProps> = ({
           "
         />
       </div>
-      <div className="flex flex-col gap-y-2 mt-4 px-3">
+      <div className="flex flex-col gap-y-2 mt-5 mb-5 px-3 ">
         {songs.map((item) => (
           <MediaItem 
             onClick={(id: string) => onPlay(id)} 
