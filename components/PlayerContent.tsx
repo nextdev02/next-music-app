@@ -12,8 +12,6 @@ import usePlayer from "@/hooks/usePlayer";
 import LikeButton from "./LikeButton";
 import MediaItem from "./MediaItem";
 import Slider from "./Slider";
-import Duration from "./MusicPlayer";
-import MusicPlayer from "./MusicPlayer";
 
 
 interface PlayerContentProps {
